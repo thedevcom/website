@@ -1,16 +1,16 @@
 ---
 blogTitle:
   id: blogTitle
-  translation: Latest Post
+  translation: Laatste Post
 readMore:
   id: readMore
-  translation: Read more
+  translation: Lees verder
 viewAllPost:
   id: viewAllPost
-  translation: View All Post
+  translation: Bekijk alle posts
 share:
   id: share
-  translation: Share
+  translation: delen
 aboutAuthor:
   id: aboutAuthor
   translation: Over de schrijver
@@ -34,7 +34,7 @@ team:
   translation: Team
 pricing:
   id: pricing
-  translation: Pricing
+  translation: Tarieven
 blog:
   id: blog
   translation: Blog

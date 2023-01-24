@@ -1,4 +1,4 @@
-############################# feature ###################################
+id: feature
 feature:
   enable : true
   image : images/about/about-business-man.jpg

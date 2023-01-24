@@ -1,4 +1,4 @@
-################################# funfacts ##################################
+id: funfacts
 funfacts:
   enable : true
   bg_image : "images/backgrounds/bg-white-wall.jpg"

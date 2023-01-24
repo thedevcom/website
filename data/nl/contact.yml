@@ -1,4 +1,4 @@
-############################## Contact #############################
+id: contact
 contact:
   enable : true
   title : Contact Us

@@ -1,4 +1,4 @@
-##################################### pricing ##############################
+id: pricing
 pricing:
   enable : true
   title : Our Plans

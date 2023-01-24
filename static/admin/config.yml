@@ -1,0 +1,452 @@
+local_backend: true
+backend:
+  name: git-gateway
+#  repo: thedevcom/website
+#  branch: netlify # Branch to update (optional; defaults to master)
+#  use_graphql: true
+media_folder: 'static/images'
+public_folder: 'images'
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_files
+
+  # Required - a list of locales to show in the editor UI
+  locales: [nl, en]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: nl
+
+_fields:
+  - &categories { label: 'Categories', name: 'categories', widget: 'list', i18n: true}
+  - &content { label: 'Content', name: 'content', widget: 'text', i18n: true }
+  - &enable { label: 'Enable', name: 'enable', widget: 'boolean', i18n: 'duplicate', required: false }
+  - &icon { label: 'Icon', name: 'icon', widget: 'string', i18n: 'duplicate', required: false }
+  - &id { label: 'ID', name: 'id', widget: 'hidden' }
+  - &image{ label: 'Image', name: 'image', widget: 'image' , media_folder: '/{{media_folder}}', i18n: duplicate }
+  - &label { label: 'Label', name: 'label', widget: 'string', i18n: true }
+  - &link { label: 'Link', name: 'link', widget: 'string', i18n: 'duplicate', default: '#'}
+  - &name { label: 'Name', name: 'name', widget: 'string', i18n: true }
+  - &services { label: 'Services', name: 'services', widget: 'list', i18n: true}
+  - &subtitle { label: 'Subtitle', name: 'subtitle', widget: 'string', i18n: true }
+  - &title { label: 'Title', name: 'title', widget: 'string', i18n: true }
+  - &webp_image { label: 'Webp image', name: 'image_webp', widget: 'image' , media_folder: '/{{media_folder}}', i18n: duplicate }
+  - &button { label: 'Button', name: 'button', widget: 'object', i18n: true, fields: [ *enable, *label, *link ]}
+collections:
+  - name: 'about'
+    label: 'About'
+    format: yaml
+    folder: 'data'
+    create: true
+    identifier_field: about.title
+    summary: "{{about.title}} (active: {{about.enable}})"
+    filter: { field: "id", value: "about"}
+    i18n:
+      structure: multiple_folders
+    fields:
+      - *id
+      - label: 'About'
+        name: 'about'
+        widget: 'object'
+        i18n: true
+        fields:
+          - *enable
+          - *title
+          - label: 'About item'
+            name: 'about_item'
+            widget: 'list'
+            i18n: true
+            fields:
+              - *icon
+              - *title
+              - *content
+  - name: 'banner'
+    label: 'Banner'
+    format: yaml
+    folder: 'data'
+    create: true
+    identifier_field: banner.title
+    summary: "{{banner.title}} (active: {{banner.enable}})"
+    filter: { field: "id", value: "banner" }
+    i18n:
+      structure: multiple_folders
+    fields:
+      - *id
+      - label: 'Banner'
+        name: 'banner'
+        widget: 'object'
+        i18n: true
+        fields:
+          - *enable
+          - <<: *webp_image
+            media_folder: '/{{media_folder}}/backgrounds'
+          - <<: *image
+            media_folder: '/{{media_folder}}/backgrounds'
+          - *icon
+          - *title
+          - *content
+          - label: 'Button'
+            name: 'button'
+            widget: 'object'
+            i18n: true
+            fields:
+              - *enable
+              - *label
+              - *link
+  - name: 'contact'
+    label: 'Contact'
+    format: yaml
+    folder: 'data'
+    create: true
+    identifier_field: contact.title
+    summary: "{{contact.title}} (active: {{contact.enable}})"
+    filter: { field: "id", value: "contact" }
+    i18n:
+      structure: multiple_folders
+    fields:
+      - *id
+      - label: 'Contact'
+        name: 'contact'
+        widget: 'object'
+        i18n: true
+        fields:
+          - *enable
+          - *title
+          - *subtitle
+          - *content
+          - label: 'Contact form'
+            name: 'contact_form'
+            widget: 'object'
+            i18n: true
+            collapsed: true
+            fields:
+              - *enable
+              - { label: 'Form action', name: 'form_action', widget: 'string' }
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'email', name: 'email', widget: 'string' }
+              - { label: 'subject', name: 'subject', widget: 'string' }
+              - { label: 'message', name: 'message', widget: 'string' }
+              - { label: 'submit', name: 'submit', widget: 'string' }
+          - label: 'Contact list'
+            name: 'contact_list'
+            widget: 'list'
+            summary: '{{fields.icon}} - {{fields.info}}'
+            i18n: true
+            fields:
+              - *icon
+              - { label: 'Info', name: 'info', widget: 'string', i18n: true}
+  - name: 'cta'
+    label: 'Call to action'
+    format: yaml
+    folder: 'data'
+    create: true
+    identifier_field: cta.title
+    summary: "{{cta.title}} (active: {{cta.enable}})"
+    filter: { field: "id", value: "cta" }
+    i18n:
+      structure: multiple_folders
+    fields:
+      - *id
+      - label: 'Call to action'
+        name: 'cta'
+        widget: 'object'
+        i18n: true
+        fields:
+        - *enable
+        - <<: *webp_image
+          media_folder: '/{{media_folder}}/backgrounds'
+        - <<: *image
+          media_folder: '/{{media_folder}}/backgrounds'
+        - *title
+        - *content
+        - *button
+  - name: 'feature'
+    label: 'Feature'
+    format: yaml
+    folder: 'data'
+    create: true
+    identifier_field: feature.title
+    summary: "{{feature.title}} (active: {{feature.enable}})"
+    filter: { field: "id", value: "feature" }
+    i18n:
+      structure: multiple_folders
+    fields:
+      - *id
+      - label: 'Feature'
+        name: 'feature'
+        widget: 'object'
+        i18n: true
+        fields:
+          - *enable
+          - <<: *webp_image
+            media_folder: '/{{media_folder}}/about'
+          - <<: *image
+            media_folder: '/{{media_folder}}/about'
+          - *title
+          - *content
+  - name: 'funfacts'
+    label: 'Fun facts'
+    format: yaml
+    folder: 'data'
+    create: true
+    identifier_field: funfacts.title
+    summary: "Fun facts (active: {{funfacts.enable}})"
+    filter: { field: "id", value: "funfacts" }
+    i18n:
+      structure: multiple_folders
+    fields:
+      - *id
+      - label: 'Fun facts'
+        name: 'funfacts'
+        widget: 'object'
+        i18n: true
+        fields:
+          - *enable
+          - <<: *webp_image
+            media_folder: '/{{media_folder}}/backgrounds'
+          - <<: *image
+            media_folder: '/{{media_folder}}/backgrounds'
+          - label: 'Counter item'
+            name: 'counter_item'
+            widget: 'list'
+            i18n: true
+            fields:
+              - *title
+              - *icon
+              - { label: 'Count', name: 'count', widget: 'number'}
+  - name: 'portfolio'
+    label: 'Portfolio'
+    format: yaml
+    folder: 'data'
+    create: true
+    identifier_field: portfolio.title
+    summary: "{{portfolio.title}} (active: {{portfolio.enable}})"
+    filter: { field: "id", value: "portfolio" }
+    i18n:
+      structure: multiple_folders
+    fields:
+      - *id
+      - label: 'Portfolio'
+        name: 'portfolio'
+        widget: 'object'
+        i18n: true
+        fields:
+          - *enable
+          - *title
+          - label: 'Portfolio item'
+            name: 'portfolio_item'
+            widget: 'list'
+            i18n: true
+            summary: '{{name}}'
+            fields:
+              - *name
+              - <<: *webp_image
+                media_folder: '/{{media_folder}}/portfolio'
+              - <<: *image
+                media_folder: '/{{media_folder}}/portfolio'
+              - *categories
+              - *content
+              - *link
+  - name: 'pricing'
+    label: 'Pricing'
+    format: yaml
+    folder: 'data'
+    create: true
+    identifier_field: pricing.title
+    summary: "{{pricing.title}} (active: {{pricing.enable}})"
+    filter: { field: "id", value: "pricing" }
+    i18n:
+      structure: multiple_folders
+    fields:
+      - *id
+      - label: 'Pricing'
+        name: 'pricing'
+        widget: 'object'
+        i18n: true
+        fields:
+          - *enable
+          - *title
+          - label: 'Pricing table'
+            name: 'pricing_table'
+            widget: 'list'
+            i18n: true
+            summary: '{{name}}'
+            fields:
+              - *name
+              - { label: 'Price', name: 'price', widget: 'string', i18n: true }
+              - { label: 'Unit', name: 'unit', widget: 'string', i18n: true }
+              - *services
+              - { label: 'Button', name: 'button', widget: 'object', i18n: true, fields: [*label, *link ] }
+
+  - name: 'translations'
+    label: 'Translations'
+    delete: false
+    format: yaml-frontmatter
+    files:
+      - label: 'English'
+        name: 'english'
+        file: i18n/en.yaml
+        create: false
+        fields: &translationFields
+          - label: 'Blog title'
+            name: 'blogTitle'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'blogTitle' }
+              - { label: 'translation', name: 'translation', widget: 'string' }
+          - label: 'Read More'
+            name: 'readMore'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'readMore' }
+              - { label: 'translation', name: 'translation', widget: 'string' }
+          - label: 'View All Post'
+            name: 'viewAllPost'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'viewAllPost' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'View All Post' }
+          - label: 'Share'
+            name: 'share'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'share' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'Share' }
+          - label: 'About author'
+            name: 'aboutAuthor'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'aboutAuthor' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'About author' }
+          - label: "Author's posts"
+            name: 'authorsPosts'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'authorsPosts' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: "Author's posts" }
+          - label: 'All'
+            name: 'all'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'all' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'All' }
+          - label: 'About Us'
+            name: 'about'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'about' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'About Us' }
+          - label: 'Service'
+            name: 'services'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'services' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'Service' }
+          - label: 'Portfolio'
+            name: 'portfolio'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'portfolio' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'Portfolio' }
+          - label: 'Team'
+            name: 'team'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'team' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'Team' }
+          - label: 'Pricing'
+            name: 'pricing'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'pricing' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'Pricing' }
+          - label: 'Blog'
+            name: 'blog'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'blog' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'Blog' }
+          - label: 'Contact'
+            name: 'contact'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'contact' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'Contact' }
+          - label: 'Themefisher'
+            name: 'themefisher'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'id', name: 'id', widget: 'hidden', default: 'themefisher' }
+              - { label: 'translation', name: 'translation', widget: 'string', default: 'Themefisher' }
+      - label: 'Nederlands'
+        name: 'nederlands'
+        file: i18n/nl.yaml
+        create: false
+        fields: *translationFields
+  - name: 'ports'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    i18n: true
+    editor:
+      preview: true
+    fields:
+      - { label: 'Post Author', name: 'author', widget: 'relation', i18n: duplicate, collection: 'authors', search_fields: ['title'], value_field: 'title', display_fields: ['title']}
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: duplicate }
+      - { label: 'Webp image', name: 'image_webp', widget: 'image' , media_folder: '/{{media_folder}}/blog', public_folder: '/{{public_folder}}/blog', i18n: duplicate}
+      - { label: 'Image', name: 'image', widget: 'image' , media_folder: '/{{media_folder}}/blog', public_folder: '/{{public_folder}}/blog', i18n: duplicate}
+      - { label: 'Description', name: 'description', widget: 'string', i18n: true  }
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+  - name: 'authors'
+    label: 'Authors'
+    folder: 'content/author'
+    create: true
+    i18n: true
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Image', name: 'image', widget: 'image' , i18n: duplicate, required: false, media_folder: '/{{media_folder}}/author', public_folder: '/{{public_folder}}/author' }
+      - { label: 'Email', name: 'email', widget: 'string', i18n: duplicate, required: false}
+      - { label: 'Body', name: 'body', widget: 'text', i18n: true }
+      - label: 'Social'
+        name: 'social'
+        widget: 'list'
+        summary: '{{fields.icon}} ({{fields.link}})'
+        i18n: true
+        fields:
+          - label: 'Icon'
+            name: 'icon'
+            widget: 'select'
+            options:
+              - {label: 'linkedin', value: 'ti-linkedin'}
+              - {label: 'linkedin-alt', value: 'ti-linkedin-alt'}
+              - {label: 'instagram', value: 'ti-instagram'}
+              - {label: 'instagram-alt', value: 'ti-instagram-alt'}
+              - {label: 'github', value: 'ti-github'}
+              - {label: 'github-alt', value: 'ti-github-alt'}
+              - {label: 'facebook', value: 'ti-facebook'}
+              - {label: 'facebook-alt', value: 'ti-facebook-alt'}
+              - {label: 'twitter', value: 'ti-twitter' }
+              - {label: 'twitter-alt', value: 'ti-twitter-alt' }
+          - { label: 'Link', name: 'link', widget: 'string', default: '#' }
