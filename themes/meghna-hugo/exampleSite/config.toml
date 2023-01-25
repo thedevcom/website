@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
-baseURL = "https://thedevcom.nl"
-title = "The DevCom"
+baseURL = "https://demo.gethugothemes.com/meghna/examplesite/"
+title = "Meghna"
 theme = "meghna-hugo"
 # post pagination
 paginate = "6"
@@ -101,42 +101,42 @@ weight = 8
 
 
 ################### French Navigation ########################
-[[Languages.nl.menu.main]]
+[[Languages.fr.menu.main]]
 name = "sur"
 url = "#about"
 weight = 1
 
-[[Languages.nl.menu.main]]
+[[Languages.fr.menu.main]]
 name = "un service"
 url = "#services"
 weight = 2
 
-[[Languages.nl.menu.main]]
+[[Languages.fr.menu.main]]
 name = "portefeuille"
 url = "#portfolio"
 weight = 3
 
-[[Languages.nl.menu.main]]
+[[Languages.fr.menu.main]]
 name = "équipe"
 url = "#team"
 weight = 4
 
-[[Languages.nl.menu.main]]
+[[Languages.fr.menu.main]]
 name = "tarification"
 url = "#pricing"
 weight = 5
 
-[[Languages.nl.menu.main]]
+[[Languages.fr.menu.main]]
 name = "blog"
 url = "#blog"
 weight = 6
 
-[[Languages.nl.menu.main]]
+[[Languages.fr.menu.main]]
 name = "contact"
 url = "#contact"
 weight = 7
 
-[[Languages.nl.menu.main]]
+[[Languages.fr.menu.main]]
 name = "themefisher"
 url = "https://themefisher.com/"
 weight = 8
@@ -195,21 +195,21 @@ link = "#"
 icon = "ti-pinterest" # themify icon pack : https://themify.me/themify-icons
 link = "#"
 
-################################ Dutch Language ########################
-[Languages.nl]
-languageName = "Nl"
-languageCode = "nl-nl"
-contentDir = "content/nl"
-weight = 1
-home = "Home"
-copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
 
 ################################ English Language ########################
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
-contentDir = "content/en"
-weight = 2
+contentDir = "content/english"
+weight = 1
 home = "Home"
 copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
 
+################################ France Language ########################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 2
+home = "Accueil"
+copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"

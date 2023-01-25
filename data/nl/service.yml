@@ -1,4 +1,4 @@
-################################# Service #################################
+id: service
 service:
   enable : true
   title : Our Services

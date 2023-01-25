@@ -1,4 +1,4 @@
-################################# Skill ##################################
+id: skill
 skill:
   enable : true
   title : Our Skills

@@ -1,4 +1,4 @@
-################################# Testimonial #########################
+id: testimonial
 testimonial:
   enable : true
   bg_image : images/backgrounds/bg-testimonial.jpg
