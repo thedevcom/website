@@ -1,9 +1,10 @@
 local_backend: true
 backend:
   name: git-gateway
-#  repo: thedevcom/website
-#  branch: netlify # Branch to update (optional; defaults to master)
-#  use_graphql: true
+  repo: thedevcom/website
+  branch: main # Branch to update (optional; defaults to master)
+  use_graphql: true
+
 media_folder: 'static/images'
 public_folder: 'images'
 
@@ -29,7 +30,7 @@ _fields:
   - &enable { label: 'Enable', name: 'enable', widget: 'boolean', i18n: 'duplicate', required: false }
   - &icon { label: 'Icon', name: 'icon', widget: 'string', i18n: 'duplicate', required: false }
   - &id { label: 'ID', name: 'id', widget: 'hidden' }
-  - &image{ label: 'Image', name: 'image', widget: 'image' , media_folder: '/{{media_folder}}', i18n: duplicate }
+  - &image { label: 'Image', name: 'image', widget: 'image' , media_folder: '/{{media_folder}}', i18n: duplicate }
   - &image_webp { label: 'Webp image', name: 'image_webp', widget: 'image' , media_folder: '/{{media_folder}}', i18n: duplicate }
   - &label { label: 'Label', name: 'label', widget: 'string', i18n: true }
   - &link { label: 'Link', name: 'link', widget: 'string', i18n: 'duplicate', default: '#'}

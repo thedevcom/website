@@ -26,6 +26,12 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Update netlify config
+        run: |
+          yq -i e '.local_backend |= false' static/admin/config.yml
+          yq -i e '.backend.name |= "github"' static/admin/config.yml
+          yq -i e '.backend.repo |= "${{ github.repository }}"' static/admin/config.yml
+          yq -i e '.backend.branch |= "${{ github.ref_name }}"' static/admin/config.yml
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:

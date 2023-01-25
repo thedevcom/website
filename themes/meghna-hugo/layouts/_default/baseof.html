@@ -8,6 +8,10 @@
     {{- block "main" . }}{{- end }}
   </div>
   {{- partial "footer.html" . -}}
+  <!-- cookie -->
+  {{ if site.Params.cookies.enable }}
+  {{- partial "consent.html" . -}}
+  {{ end }}
 </body>
 
 </html>
