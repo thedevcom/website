@@ -5,7 +5,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
   use_graphql: true
   base_url: https://cms-oauth-provider.azurewebsites.net
-  auth_endpoint: /api/auth
+  auth_endpoint: /api/callback
 
 media_folder: 'static/images'
 public_folder: 'images'

@@ -23,7 +23,7 @@ def main(req: HttpRequest) -> HttpResponse:
             "client_id": client_id,
             "client_secret": client_secret,
             "code": code,
-            "redirect_uri": f'{redirect_uri}/callback',
+            "redirect_uri": redirect_uri,
             "state": state,
             "scope": scope
         }
