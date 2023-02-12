@@ -1,7 +1,7 @@
 id: about
 about:
   enable: true
-  title: About Us
+  title: Over Ons
   about_item:
     - icon: ti-ruler-pencil
       title: We're Creative
