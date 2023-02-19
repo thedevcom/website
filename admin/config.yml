@@ -1,7 +1,7 @@
 local_backend: false
 backend:
   name: github
-  repo: thedevcom/website
+  repo: devportnl/website
   branch: main # Branch to update (optional; defaults to master)
   use_graphql: true
   base_url: https://cms-oauth-provider.azurewebsites.net
