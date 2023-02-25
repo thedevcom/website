@@ -1,6 +1,6 @@
 id: about
 about:
-  enable: true
+  enable: false
   title: About Us
   about_item:
     - title: We're Professional
