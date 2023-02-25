@@ -78,9 +78,6 @@ Languages:
         - name: contact
           url: '#contact'
           weight: 7
-        - name: themefisher
-          url: 'https://themefisher.com/'
-          weight: 8
     languageName: Nl
     languageCode: nl-nl
     weight: 1
@@ -123,9 +120,6 @@ Languages:
           name: Dropdown 2
           url: '#'
           weight: 2
-        - name: themefisher
-          url: 'https://themefisher.com/'
-          weight: 8
     languageName: En
     languageCode: en-us
     weight: 2

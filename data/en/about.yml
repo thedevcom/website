@@ -1,6 +1,6 @@
 id: about
 about:
-  enable: false
+  enable: true
   title: Over Ons
   about_item:
     - icon: ti-ruler-pencil
