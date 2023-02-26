@@ -4,8 +4,10 @@ banner:
   image_webp: images/backgrounds/bg-area.webp
   image: images/backgrounds/bg-area.jpg
   icon: ""
-  title: Experience the new reality
-  content:
+  title: DevPort
+  content: At DevPort, we prioritize innovation, reliability, and professional support. 
+    We offer development knowledge and capacity, along with expertise in DevOps and Cloud. 
+    Contact us today to begin your development journey and partner with us for success.
   button:
     enable: true
     label: Explore Us

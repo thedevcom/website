@@ -25,7 +25,7 @@ params:
   logo: images/logo.png
   description: Responsive Multipurpose Parallax Hugo Template
   author: Themefisher
-  google_analytics_id: 'G-V2DFK9V5BV'
+  google_analytics_id: 'G-TRE011ZEWG'
   post_share: true
   preloader:
     enable: false
