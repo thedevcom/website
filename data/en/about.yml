@@ -1,17 +1,24 @@
 id: about
 about:
   enable: true
-  title: Over Ons
+  title: About Us
   about_item:
-    - icon: ti-ruler-pencil
+    - icon: ti-light-bulb
       title: We're Creative
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
-    - title: We're Professional
-      icon: ti-cup
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - title: We're Genius
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-      icon: ti-thought
+    - icon: ti-shield
+      title: Reliable transparency
+      content: Reliability is one of our core values. 
+        We are a transparent and honest organization that 
+        always communicates openly with our clients and employees. 
+        Nothing remains unspoken and we are committed to the safety 
+        and well-being of everyone.
+    - icon: ti-briefcase
+      title: Professional support
+      content: Professionalism is inherent to us. 
+        We ensure a business-like and serious approach in our communication
+        with clients and employees. 
+        We go above and beyond to satisfy our clients and support 
+        our employees in their development.
+

@@ -1,17 +1,24 @@
 id: about
 about:
-  enable: false
+  enable: true
   title: About Us
   about_item:
-    - title: We're Professional
-      icon: ti-cup
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: ti-ruler-pencil
-      title: We're Creative
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - title: We're Genius
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-      icon: ti-thought
+    - icon: ti-light-bulb
+      title: Innovatieve ontwikkeling
+      content: Ontwikkeling staat bij ons hoog in het vaandel.
+        We streven voortdurend naar nieuwe ideeën en innovatieve 
+        oplossingen om onszelf en onze klanten verder te ontwikkelen.
+    - icon: ti-shield
+      title: Betrouwbare transparantie
+      content: Betrouwbaarheid is een van onze belangrijkste waarden.
+        Wij zijn een transparante en eerlijke organisatie die altijd 
+        open communiceert met onze klanten en medewerkers. 
+        Niets blijft bij ons onbesproken en we zetten ons in voor de 
+        veiligheid en bescherming van iedereen.
+    - icon: ti-briefcase
+      title: Professionele ondersteuning
+      content: Professionaliteit is voor ons vanzelfsprekend. 
+        We zorgen voor een zakelijke en serieuze benadering in onze 
+        communicatie met klanten en medewerkers. 
+        We gaan tot het uiterste om onze klanten tevreden te stellen 
+        en onze medewerkers te ondersteunen in hun ontwikkeling.
