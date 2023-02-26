@@ -414,7 +414,6 @@ collections:
         i18n: true
         fields:
           - *enable
-          - *title
           - label: 'Testimonial item'
             name: 'testimonial_item'
             widget: 'list'
@@ -436,6 +435,7 @@ collections:
     editor:
       preview: true
     fields:
+      - *enable
       - {label: 'Post Author', name: 'author', widget: 'relation', i18n: duplicate, collection: 'authors', search_fields: ['title'], value_field: 'title', display_fields: ['title']}
       - {label: 'Title', name: 'title', widget: 'string', i18n: true}
       - {label: 'Publish Date', name: 'date', widget: 'datetime', i18n: duplicate}
