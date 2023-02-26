@@ -1,27 +1,34 @@
 id: feature
 feature:
   enable : true
-  image : images/about/about-business-man.jpg
-  image_webp : images/about/about-business-man.webp
-  title : We’re A Digital Design Agency.
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi."
-  feature_item : 
-      # feature item loop
-    - title : SEO Optimized
-      icon : ti-world # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
-      
-      # feature item loop
-    - title : Easy Customization
-      icon : ti-panel # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+  image : images/about/about-feature.jpg
+  image_webp : images/about/about-feature.webp
+  title : We zijn een kennishuis
+  content : Our organization offers various services to help you in your development journey. Here are some of our key services&#58;
+  feature_item :
+    # feature item loop
+    - title : Software developement
+      icon : ti-github # themify icon pack : https://themify.me/themify-icons
+      content : We offer extensive knowledge and experience in both front-end and back-end development.
+        Whether you're looking for custom solutions or help developing your ideas, we have the expertise 
+        to assist you.
 
       # feature item loop
-    - title : SEO Optimized
-      icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
-      
+    - title : DevOps
+      icon : ti-panel # themify icon pack : https://themify.me/themify-icons
+      content : We help create automated and integrated workflows between development and operations.
+        With our approach, you can bring your products to market faster and with fewer errors.
+
       # feature item loop
-    - title : Easy Customization
-      icon : ti-announcement # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+    - title : Cloud
+      icon : ti-cloud # themify icon pack : https://themify.me/themify-icons
+      content : Our cloud experts provide migration, management, and optimization of your cloud environment.
+        Whether you want to improve your current infrastructure or build your cloud strategy from 
+        scratch, we have the skills to help.
+
+      # feature item loop
+    - title : Persoonlijke ontwikkeling
+      icon : ti-face-smile # themify icon pack : https://themify.me/themify-icons
+      content : At DevPort, we place great importance on the development of our employees.
+        We provide an environment in which employees can continue to develop and encourage 
+        their personal and professional growth.

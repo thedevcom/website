@@ -1,13 +1,8 @@
 id: about
 about:
   enable: true
-  title: About Us
+  title: Over Ons
   about_item:
-    - icon: ti-light-bulb
-      title: Innovatieve ontwikkeling
-      content: Ontwikkeling staat bij ons hoog in het vaandel.
-        We streven voortdurend naar nieuwe ideeën en innovatieve 
-        oplossingen om onszelf en onze klanten verder te ontwikkelen.
     - icon: ti-shield
       title: Betrouwbare transparantie
       content: Betrouwbaarheid is een van onze belangrijkste waarden.
@@ -15,6 +10,11 @@ about:
         open communiceert met onze klanten en medewerkers. 
         Niets blijft bij ons onbesproken en we zetten ons in voor de 
         veiligheid en bescherming van iedereen.
+    - icon: ti-light-bulb
+      title: Innovatieve ontwikkeling
+      content: Ontwikkeling staat bij ons hoog in het vaandel.
+        We streven voortdurend naar nieuwe ideeën en innovatieve
+        oplossingen om onszelf en onze klanten verder te ontwikkelen.
     - icon: ti-briefcase
       title: Professionele ondersteuning
       content: Professionaliteit is voor ons vanzelfsprekend. 

@@ -1,27 +1,36 @@
 id: feature
 feature:
   enable : true
-  image : images/about/about-business-man.jpg
-  image_webp : images/about/about-business-man.webp
-  title : We’re A Digital Design Agency.
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi."
-  feature_item : 
+  image : images/about/about-feature.jpg
+  image_webp : images/about/about-feature.webp
+  title : We zijn een kennishuis
+  content : Onze organisatie biedt diverse diensten aan om u te helpen bij uw ontwikkelingsreis. 
+    Hier zijn enkele van onze belangrijkste services&#58;
+  feature_item :
       # feature item loop
-    - title : SEO Optimized
-      icon : ti-world # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+    - title : Software developement
+      icon : ti-github # themify icon pack : https://themify.me/themify-icons
+      content : Wij bieden uitgebreide kennis en ervaring op het gebied van zowel front-end als back-end 
+        development. Of u nu op zoek bent naar maatwerkoplossingen of hulp bij het ontwikkelen van uw 
+        ideeën, wij hebben de expertise om u te helpen.
       
       # feature item loop
-    - title : Easy Customization
+    - title : DevOps
       icon : ti-panel # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+      content : Wij helpen bij het creëren van geautomatiseerde en geïntegreerde workflows tussen development en 
+        operations. Door onze aanpak kunt u uw producten sneller en met minder fouten op de markt brengen.
 
       # feature item loop
-    - title : SEO Optimized
-      icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
-      
+    - title : Cloud
+      icon : ti-cloud # themify icon pack : https://themify.me/themify-icons
+      content :
+        Onze cloudexperts zorgen voor de migratie, het beheer en de optimalisatie van uw cloudomgeving. 
+        Of u nu uw huidige infrastructuur wilt verbeteren of uw cloudstrategie vanaf de grond wilt opbouwen,
+        wij hebben de vaardigheden om u te helpen.
+
       # feature item loop
-    - title : Easy Customization
-      icon : ti-announcement # themify icon pack : https://themify.me/themify-icons
-      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+    - title : Persoonlijke ontwikkeling
+      icon : ti-face-smile # themify icon pack : https://themify.me/themify-icons
+      content : Bij DevPort hechten we veel belang aan de ontwikkeling van onze medewerkers. 
+        We zorgen voor een omgeving waarin medewerkers zich kunnen blijven ontwikkelen en stimuleren 
+        hun persoonlijke en professionele groei.

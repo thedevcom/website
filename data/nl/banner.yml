@@ -1,12 +1,14 @@
 id: banner
 banner:
-  enable : true
-  bg_image_webp : "images/backgrounds/hero-area.webp"
-  bg_image : "images/backgrounds/hero-area.jpg"
-  icon : "" # themify icon pack : https://themify.me/themify-icons
-  title : "Experience the new reality"
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
+  enable: true
+  image_webp: images/backgrounds/bg-area.webp
+  image: images/backgrounds/bg-area.jpg
+  icon: ""
+  title: DevPort
+  content: Bij DevPort staat innovatie, betrouwbaarheid en professionele ondersteuning voorop. 
+    Wij bieden kennis en capaciteit op het gebied van ontwikkeling, alsook expertise in DevOps en Cloud. 
+    Neem vandaag nog contact met ons op om jouw ontwikkelingsreis te beginnen en samen te werken aan succes.
   button:
-    enable : true
-    label : "Explore Us"
-    link : "#services"
+    enable: true
+    label: Maak kennis
+    link: "#about"

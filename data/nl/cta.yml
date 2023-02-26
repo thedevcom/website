@@ -1,11 +1,12 @@
 id: cta
 cta:
   enable : true
-  image : "images/backgrounds/bg-white-wall.jpg"
-  image_webp : "images/backgrounds/bg-white-wall.webp"
-  title : "Great Design & Incredible Features"
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur odio impedit incidunt? Omnis accusantium ea reiciendis, fugit commodi nostrum."
+  image : images/backgrounds/bg-green.jpg
+  image_webp : images/backgrounds/bg-green.webp
+  title : Begin uw ontwikkelingsreis vandaag nog
+  content : Neem vandaag nog contact met ons op en ontdek hoe wij u kunnen helpen bij het 
+    ontwikkelen van uw ideeën. Wacht niet langer en laat ons uw partner zijn in uw succesverhaal.
   button:
     enable : true
-    label : "Start a project with us"
-    link : "#contact"
+    label : Maak een afspraak
+    link : #contact
