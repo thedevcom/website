@@ -57,10 +57,10 @@ Languages:
   nl:
     menu:
       main:
-        - name: Over ons
+        - name: over ons
           url: '#about'
           weight: 1
-        - name: services
+        - name: diensten
           url: '#services'
           weight: 2
         - name: portfolio
@@ -78,13 +78,12 @@ Languages:
         - name: contact
           url: '#contact'
           weight: 7
-    languageName: Nl
+    languageName: NL
     languageCode: nl-nl
     weight: 1
     home: Home
     copyright: >-
-      Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) &
-      Developed by [Gethugothemes](https://gethugothemes.com)
+      Copyright &copy; 2023 DevPort.nl
   en:
     menu:
       main:
@@ -120,10 +119,9 @@ Languages:
           name: Dropdown 2
           url: '#'
           weight: 2
-    languageName: En
+    languageName: EN
     languageCode: en-us
     weight: 2
     home: Home
     copyright: >-
-      Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) &
-      Developed by [Gethugothemes](https://gethugothemes.com)
+      Copyright &copy; 2023 DevPort.nl

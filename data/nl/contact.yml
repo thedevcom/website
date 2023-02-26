@@ -1,31 +1,26 @@
 id: contact
 contact:
-  enable : true
-  title : Contact Us
-  subtitle : Contact Details
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.
-
-  # Contact details
+  enable: true
+  title: Contact opnemen?
+  subtitle: Contact Details
+  content: Heeft u vragen of wilt u meer informatie over onze diensten? Neem
+    gerust contact met ons op via onderstaande gegevens.
   contact_list:
-    - icon : ti-location-pin # themify icon pack : https://themify.me/themify-icons
-      info : "Khaja Road, Bayzid, Chittagong, Bangladesh"
-      
-    - icon : ti-mobile # themify icon pack : https://themify.me/themify-icons
-      info : "Phone: +880-31-000-000"
-      
-    - icon : ti-printer # themify icon pack : https://themify.me/themify-icons
-      info : "Fax: +880-31-000-000"
-      
-    - icon : ti-email # themify icon pack : https://themify.me/themify-icons
-      info : "Email: hello@meghna.com"
-
-
-  # Contact form
+    - icon: ti-location-pin
+      info: "Postadres: Willem Hogenhoeklaan 4, Spijkenisse"
+    - icon: ti-location-pin
+      info: Wij komen naar u toe door heel Nederland heen!
+    - icon: ti-mobile
+      info: "Maarten: +31(0)6 411 872 44 "
+    - icon: ti-mobile
+      info: "Jelle: +31(0)6 250 356 19 "
+    - icon: ti-email
+      info: "Email: info@devport.nl"
   contact_form:
-    enable : true
-    form_action : "#" #contact form works with https://formspree.io
-    name : "votre nom"
-    email : "Votre email"
-    subject : "Matière"
-    message : "Message"
-    submit : "Soumettre"
+    enable: false
+    form_action: "#"
+    name: votre nom
+    email: Votre email
+    subject: Matière
+    message: Message
+    submit: Soumettre
