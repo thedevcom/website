@@ -5,6 +5,7 @@ paginate: '6'
 summaryLength: '15'
 disqusShortname: ''
 disableLanguages: []
+defaultContentLanguage: nl
 params:
   plugins:
     css:
