@@ -7,7 +7,7 @@ feature:
   content : Our organization offers various services to help you in your development journey. Here are some of our key services&#58;
   feature_item :
     # feature item loop
-    - title : Software developement
+    - title : Software development
       icon : ti-github # themify icon pack : https://themify.me/themify-icons
       content : We offer extensive knowledge and experience in both front-end and back-end development.
         Whether you're looking for custom solutions or help developing your ideas, we have the expertise 

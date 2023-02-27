@@ -8,7 +8,7 @@ feature:
     Hier zijn enkele van onze belangrijkste services&#58;
   feature_item :
       # feature item loop
-    - title : Software developement
+    - title : Software development
       icon : ti-github # themify icon pack : https://themify.me/themify-icons
       content : Wij bieden uitgebreide kennis en ervaring op het gebied van zowel front-end als back-end 
         development. Of u nu op zoek bent naar maatwerkoplossingen of hulp bij het ontwikkelen van uw 
