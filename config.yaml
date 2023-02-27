@@ -43,7 +43,7 @@ params:
     map_marker: images/marker.png
   social:
     - icon: ti-linkedin
-      link: '#'
+      link: 'https://www.linkedin.com/company/devportnl/'
 Languages:
   nl:
     menu:
@@ -85,7 +85,7 @@ Languages:
     weight: 1
     home: Home
     copyright: >-
-      Copyright &copy; 2023 DevPort.nl
+      Copyright &copy; 2023 DevPort.nl | [Privacystatement](./docs/20230221-Privacyverklaring-DevPort-BV.pdf)
   en:
     menu:
       main:
@@ -126,4 +126,4 @@ Languages:
     weight: 2
     home: Home
     copyright: >-
-      Copyright &copy; 2023 DevPort.nl
+      Copyright &copy; 2023 DevPort.nl | [Privacyverklaring](./documents/20230221-Privacyverklaring-DevPort-BV.pdf)
