@@ -2,15 +2,24 @@
 blogTitle:
   id: blogTitle
   translation: Laatste Post
+jobTitle:
+  id: jobTitle
+  translation: Vacatures
 readMore:
   id: readMore
   translation: Lees verder
 viewAllPost:
   id: viewAllPost
   translation: Bekijk alle posts
+viewAllJobs:
+  id: viewAllJobs
+  translation: Bekijk Alle Vacatures
+emailUs:
+  id: emailUs
+  translation: Email ons
 share:
   id: share
-  translation: delen
+  translation: Delen
 aboutAuthor:
   id: aboutAuthor
   translation: Over de schrijver

@@ -1250,14 +1250,14 @@ a:hover {
 }
 
 /*=================================================================
-  Single Blog Page
+  Single Blog/Job Page
 ==================================================================*/
-#blog-banner {
+#blog-banner, #job-banner {
   padding-bottom: 100px;
   padding-top: 150px;
 }
 
-#blog-page {
+#blog-page, #job-page {
   margin: 0 0 40px;
 }
 
@@ -1303,13 +1303,13 @@ a:hover {
   font-size: 16px;
 }
 
-.single-blog {
+.single-blog, .single-job {
   background-color: #fff;
   margin-bottom: 50px;
   padding: 20px;
 }
 
-.blog-subtitle {
+.blog-subtitle, .job-subtitle {
   font-size: 15px;
   padding-bottom: 10px;
   border-bottom: 1px solid #dedede;
@@ -1603,14 +1603,14 @@ input#e-mail,
 }
 
 /*=================================================================
-	Blog Page
+	Blog/Job Page
 ==================================================================*/
-#blog-banner {
+#blog-banner, #job-banner{
   padding-bottom: 100px;
   padding-top: 150px;
 }
 
-.blog-icon {
+.blog-icon, .job-icon {
   border: 1px solid #6CB670;
   border-radius: 50%;
   color: #6CB670;
@@ -1618,11 +1618,11 @@ input#e-mail,
   padding: 16px 20px;
 }
 
-.blog-title h1 {
+.blog-title h1, .job-title h1 {
   text-transform: uppercase;
 }
 
-#blog-page {
+#blog-page, #job-page {
   margin: 0 0 40px;
 }
 
@@ -1861,9 +1861,9 @@ aside.widget {
 }
 
 /*=================================================================
-	Single Blog Page
+	Single Blog/Job Page
 ==================================================================*/
-.single-blog {
+.single-blog, .single-job{
   background-color: #fff;
   margin-bottom: 50px;
   padding: 20px;

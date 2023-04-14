@@ -63,12 +63,12 @@ Languages:
 #        - name: tarieven
 #          url: '#pricing'
 #          weight: 4
-#        - name: blog
-#          url: '#blog'
-#          weight: 6
+        - name: vacatures
+          url: '#job'
+          weight: 3
         - name: contact
           url: '#contact'
-          weight: 3
+          weight: 4
 #        - name: Dropdown
 #          weight: 8
 #          hasChildren: true

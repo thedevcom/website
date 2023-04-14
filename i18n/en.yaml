@@ -2,12 +2,21 @@
 blogTitle:
   id: blogTitle
   translation: Latest Post
+jobTitle:
+  id: jobTitle
+  translation: Jobs
 readMore:
   id: readMore
   translation: Read more
 viewAllPost:
   id: viewAllPost
   translation: View All Post
+viewAllJobs:
+  id: viewAllJobs
+  translation: View All Jobs
+emailUs:
+  id: emailUs
+  translation: Email Us
 share:
   id: share
   translation: Share

@@ -449,6 +449,23 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' , media_folder: '/{{media_folder}}/blog', public_folder: '/{{public_folder}}/blog', i18n: duplicate}
       - { label: 'Description', name: 'description', widget: 'string', i18n: true  }
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+  - name: 'job'
+    label: 'Job'
+    folder: 'content/job'
+    create: true
+    i18n: true
+    editor:
+      preview: true
+    fields:
+      - *enable
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: duplicate }
+      - { label: 'Webp image', name: 'image_webp', widget: 'image' , media_folder: '/{{media_folder}}/job', public_folder: '/{{public_folder}}/job', i18n: duplicate }
+      - { label: 'Image', name: 'image', widget: 'image' , media_folder: '/{{media_folder}}/job', public_folder: '/{{public_folder}}/job', i18n: duplicate }
+      - { label: 'Description', name: 'description', widget: 'string', i18n: true }
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+      - { label: 'CTA', name: 'cta', widget: 'string', i18n: true }
+      - *email
   - name: 'authors'
     label: 'Authors'
     folder: 'content/author'
