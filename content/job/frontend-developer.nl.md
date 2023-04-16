@@ -5,7 +5,7 @@ image_webp: images/job/frontend1.webp
 image: images/job/frontend1.jpg
 description : "Vacature Frontend developer @DevPort"
 cta:
-email: joinus@devoport.nl
+email: joinus@devport.nl
 ---
 
 # Frontend developer

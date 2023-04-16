@@ -5,7 +5,7 @@ image_webp: images/job/devops1.webp
 image: images/job/devops1.jpg
 description : "Job Vacancy DevOps engineer @DevPort"
 cta: 
-email: joinus@devoport.nl
+email: joinus@devport.nl
 ---
 
 # DevOps engineer (Azure)
