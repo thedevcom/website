@@ -145,7 +145,7 @@ weight = 8
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "Responsive Multipurpose Parallax Hugo Template"
+description = "DevPort - Een veilige haven voor Software, DevOps en Cloud Engineers"
 author = "Themefisher"
 # Google Analytics
 google_analytics_id = "" # Your ID
