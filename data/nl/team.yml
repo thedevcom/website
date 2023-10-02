@@ -27,3 +27,11 @@ team:
       social:
         - icon: ti-linkedin
           link: "https://www.linkedin.com/in/kevin-elfering-58343087/"
+    - name: Harm Akkerman
+      image_webp: images/team/harm.webp
+      image: images/team/harm.jpg
+      designation: DevOps engineer
+      content: ""
+      social:
+        - icon: ti-linkedin
+          link: "https://www.linkedin.com/in/harm-akkerman-62836b238/"

@@ -24,7 +24,7 @@ params:
       - link: plugins/lazy-load/lozad.min.js
       - link: plugins/google-map/map.js
   logo: images/logo.png
-  description: Responsive Multipurpose Parallax Hugo Template
+  description: DevPort - Een veilige haven voor Software, DevOps en Cloud Engineers
   author: Themefisher
   google_analytics_id: 'G-TRE011ZEWG'
   post_share: true
