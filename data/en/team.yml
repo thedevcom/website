@@ -35,3 +35,19 @@ team:
       social:
         - icon: ti-linkedin
           link: "https://www.linkedin.com/in/harm-akkerman-62836b238/"
+    - name: Lars van der Voorden
+      image_webp: images/team/lars.webp
+      image: images/team/lars.jpg
+      designation: DevOps/Automation/Platform Engineer
+      content: ""
+      social:
+        - icon: ti-linkedin
+          link: "https://www.linkedin.com/in/larsvandervoorden/"
+    - name: Steven Binda
+      image_webp: images/team/steven.webp
+      image: images/team/steven.jpg
+      designation: Software & DevOps Engineer / Solution Architect.
+      content: ""
+      social:
+        - icon: ti-linkedin
+          link: "https://www.linkedin.com/in/steven-binda/"
