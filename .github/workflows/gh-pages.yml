@@ -33,7 +33,7 @@ jobs:
           yq -i e '.backend.repo |= "${{ github.repository }}"' static/admin/config.yml
           yq -i e '.backend.branch |= "${{ github.ref_name }}"' static/admin/config.yml
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
