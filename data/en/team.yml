@@ -51,3 +51,11 @@ team:
       social:
         - icon: ti-linkedin
           link: "https://www.linkedin.com/in/steven-binda/"
+    - name: Mitchell Kamta
+      image_webp: images/team/mitchell.webp
+      image: images/team/mitchell.jpg
+      designation: DevOps Engineer
+      content: ""
+      social:
+        - icon: ti-linkedin
+          link: "https://www.linkedin.com/in/mitchellkamta/"
